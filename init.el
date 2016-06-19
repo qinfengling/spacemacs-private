@@ -79,8 +79,6 @@ values."
      (auto-completion :variables auto-completion-enable-sort-by-usage t
                       auto-completion-enable-help-tooltip t
                       :disabled-for org markdown)
-     (chinese :variables chinese-enable-youdao-dict t
-              chinese-enable-fcitx t)
      zilongshanren
      guanghui
      )
