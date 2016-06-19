@@ -79,8 +79,6 @@ values."
      (auto-completion :variables auto-completion-enable-sort-by-usage t
                       auto-completion-enable-help-tooltip t
                       :disabled-for org markdown)
-     (chinese :variables chinese-enable-youdao-dict t
-              chinese-enable-fcitx t)
      zilongshanren
      guanghui
      )
@@ -372,9 +370,9 @@ It is called immediately after `dotspacemacs/init'.  You are free to put almost
 any user code here.  The exception is org related code, which should be placed
 in `dotspacemacs/user-config'."
   (setq configuration-layer--elpa-archives
-        '(("melpa-cn" . "https://elpa.zilongshanren.com/melpa/")
-          ("org-cn"   . "https://elpa.zilongshanren.com/org/")
-          ("gnu-cn"   . "https://elpa.zilongshanren.com/gnu/")))
+        '(("melpa-cn" . "https://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
+          ("org-cn"   . "https://mirrors.tuna.tsinghua.edu.cn/elpa/org/")
+          ("gnu-cn"   . "https://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")))
  
   ;; https://github.com/syl20bnr/spacemacs/issues/2705
   ;; (setq tramp-mode nil)
