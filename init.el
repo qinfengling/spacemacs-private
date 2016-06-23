@@ -36,8 +36,8 @@ values."
      ;; react
      better-defaults
      github
-     ;; (version-control :variables version-control-diff-tool 'git-gutter+
-     ;;                  version-control-global-margin t)
+      (version-control :variables version-control-diff-tool 'git-gutter+
+                       version-control-global-margin t)
      osx
      ;; latex
      deft
@@ -51,20 +51,18 @@ values."
      yaml
      ;; (ruby :variables ruby-version-manager 'rvm)
      python
-     lua
-     html
      ;; command-log
-     javascript
      (typescript :variables
                  typescript-fmt-on-save nil
                  typescript-fmt-tool 'typescript-formatter)
      ;; restclient
-     emacs-lisp
      (clojure :variables clojure-enable-fancify-symbols t)
      ranger
      ;; racket
      (spacemacs-layouts :variables layouts-enable-autosave nil
                         layouts-autosave-delay 300)
+     (colors :variables
+	             colors-enable-nyan-cat-progress-bar t)
      colors
      (git :variables
           git-magit-status-fullscreen t
@@ -202,7 +200,7 @@ values."
    ;; directory. A string value must be a path to an image format supported
    ;; by your Emacs build.
    ;; If the value is nil then no banner is displayed. (default 'official)
-   dotspacemacs-startup-banner 'official
+   dotspacemacs-startup-banner '004
    ;; List of items to show in the startup buffer. If nil it is disabled.
    ;; Possible values are: `recents' `bookmarks' `projects' `agenda' `todos'.
    ;; (default '(recents projects))
@@ -215,7 +213,7 @@ values."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(solarized-light solarized-dark)
+   dotspacemacs-themes '(spacemacs-dark solarized-dark solarized-light)
    ;; If non nil the cursor color matches the state color.
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
