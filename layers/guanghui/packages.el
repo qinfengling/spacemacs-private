@@ -688,7 +688,7 @@ This segment overrides the modeline functionality of `org-mode-line-string'."
 
 
     (setq c-default-style "linux") ;; set style to "linux"
-    (setq c-basic-offset 4)
+    (setq c-basic-offset 8)
     (c-set-offset 'substatement-open 0)
     (with-eval-after-load 'c++-mode
       (define-key c++-mode-map (kbd "s-.") 'company-ycmd)))
